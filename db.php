@@ -1,9 +1,8 @@
 <?php
-$host     = getenv('DB_HOST') ?: 'localhost';
-$dbname   = getenv('DB_NAME') ?: 'celengan';
-$username = getenv('DB_USER') ?: 'root';
-$password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : '';
-$port     = getenv('DB_PORT') ?: '3306';
+$host = 'sql123.infinityfree.com';  
+$dbname = 'if0_3456789_celengan';      
+$username = 'if0_3456789';             
+$password = 'PasswordAkunHostingmu';
 
 try {
     $pdo = new PDO(
