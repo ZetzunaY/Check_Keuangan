@@ -3,6 +3,7 @@ $host     = getenv('DB_HOST') ?: 'localhost';
 $dbname   = getenv('DB_NAME') ?: 'celengan';
 $username = getenv('DB_USER') ?: 'root';
 $password = getenv('DB_PASS') !== false ? getenv('DB_PASS') : '';
+$port     = getenv('DB_PORT') ?: '3306';
 
 try {
     $pdo = new PDO(
