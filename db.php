@@ -1,8 +1,8 @@
 <?php
-$host = 'sql123.infinityfree.com';  
-$dbname = 'if0_3456789_celengan';      
-$username = 'if0_3456789';             
-$password = 'PasswordAkunHostingmu';
+$host = 'sql112.infinityfree.com';
+$dbname = 'if0_43175733_celengan'; 
+$username = 'if0_43175733';
+$password = 'XyUIyLh6jvJN4nG';
 
 try {
     $pdo = new PDO(

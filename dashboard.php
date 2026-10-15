@@ -171,7 +171,6 @@ $targetNominal = (float) $target['nominal'];
 $sisaTarget = max(0, $targetNominal - $tabungan);
 $progres = $targetNominal > 0 ? min(100, ($tabungan / $targetNominal) * 100) : 0;
 
-// Estimasi dibuat dari rata-rata setoran per hari sejak setoran pertama tercatat.
 $statStmt = $pdo->prepare("SELECT COALESCE(SUM(nominal), 0) AS total_setor, MIN(tanggal) AS setoran_pertama FROM transaksi WHERE user_id = :user_id AND tipe = 'setor_tabungan'");
 $statStmt->execute([':user_id' => $userId]);
 $stat = $statStmt->fetch();
